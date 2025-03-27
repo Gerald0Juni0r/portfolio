@@ -120,6 +120,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.rede-social:hover {
+  background: #83DA8A;
+}
 
 /* Definição do Sobre Mim */
 .sec-sobre {
