@@ -140,6 +140,9 @@ function App() {
               <span className="letra-cor-fixa">R</span>
             </h1>
           </div>
+          <h1>
+            PORTFÓLIO EM CONSTRUÇÃO
+          </h1>
           <div>
             <h3 className="escrevendo-cargo cor-verde">
               <span className="cor-verde">&gt;</span> Desenvolvedor WEB{" "}
