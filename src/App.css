@@ -1,0 +1,162 @@
+/* Organização inicial */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  color: white;
+  text-decoration: none;
+}
+body {
+  background-color: #252323;
+}
+
+/* Definições do App */
+/* .App {} */
+
+/* Definições do Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Tamanho da logo */
+.App-logo {
+  /* height: 2.5em; */
+  pointer-events: none;
+}
+
+/* Animação da navbar */
+.navbar a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #83DA8A;
+}
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #83DA8A;
+  transition: .3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+
+/* Definição do Inicio */
+.sec-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Faz com que ocupe a tela toda */
+  padding: 0 10%;
+}
+.text-inicio {
+  display: block;
+}
+.first-name {
+  margin-right: 20px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  letter-spacing: 2%;
+}
+.letra-cor:hover {
+  color: #83DA8A;
+}
+.letra-cor-fixa, .cor-verde {
+  color: #83DA8A;
+}
+/* inicio da animação da barra */
+.cursor {
+  animation: blink 0.8s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+/* fim da animação da barra */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.redes-sociais {
+  display: flex;
+  margin-top: 20px;
+}
+.rede-social {
+  margin-right: 2%;
+  height: 40px;
+  width: 40px;
+  background: #D9D9D9;
+  padding: 10px;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Definição do Sobre Mim */
+.sec-sobre {
+  display: flex;
+  
+}
+.sec-sobre h2 {
+  display: inline;
+
+}
+.sec-sobre-h2 {
+  margin-top: 10%;
+  margin-inline: auto;
+}
+.sec-sobre-p {
+  margin-top: 20%;
+  margin-inline: auto;
+  width: 600px;
+}
+
+/* Definição do Meus Projetos */
+
+
+
+/* Definição do Habilidades Técnicas */
+
+
+
+
+ 
+
+/* Navbar alterada ao entrar na seção "Sobre Mim" */
+.navbar-alterada {
+  background-color: #4A4949 !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-alterada .navbar a {
+  color: #83DA8A !important;
+}
