@@ -118,7 +118,7 @@ body {
   padding: 10px;
   border-radius: 10%;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 .rede-social:hover {
   background: #83DA8A;
