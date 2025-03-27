@@ -150,7 +150,7 @@ function App() {
             </h3>
           </div>
           <div className="redes-sociais">
-            <a
+            <a 
               href="https://www.linkedin.com/in/gerald0juni0r/"
               target="_blank"
               rel="noreferrer"
