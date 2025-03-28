@@ -58,7 +58,7 @@ function App() {
       {/* INICIO */}
       <div className="sec-inicio" id="inicio">
         <div className="text-inicio">
-          <h2 className="cor-verde">Olá 👋, meu nome é</h2>
+          <h2 className="cor-verde mouse-event-none">Olá 👋, meu nome é</h2>
           <div className="name">
             <h1 className="first-name">
               <span className="letra-cor">G</span>
@@ -78,7 +78,7 @@ function App() {
               <span className="letra-cor-fixa">R</span>
             </h1>
           </div>
-          <div className="escrevendo-cargo-div">
+          <div className="escrevendo-cargo-div mouse-event-none">
             <span className="cor-verde">&gt;</span>
             <h3 className="escrevendo-cargo cor-verde">
               <span className="texto-animado cor-verde">Desenvolvedor WEB{"  "}</span>

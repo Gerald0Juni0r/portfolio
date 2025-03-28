@@ -11,6 +11,7 @@ body {
   background-color: #252323;
   align-items: center;
   justify-content: center;
+  user-select: none; /* Não conseguirá selecionar nada do site */
 }
 
 /* Definições do App */
@@ -69,12 +70,16 @@ body {
   font: 0.8rem sans-serif;
   width: 50%;
 }
+.mouse-event-none {
+  pointer-events: none
+}
 .name {
   display: flex;
   align-items: center;
   font-size: 1rem;
   letter-spacing: 2%;
   text-align: left;
+  cursor:default;
 }
 .first-name {
   margin-right: 20px;
@@ -159,9 +164,9 @@ body {
   display: flex;
   height: 100vh;  
 }
-/* .sec-sobre-setup {
-
-} */
+.sec-sobre-setup {
+  pointer-events: none
+}
 .sec-sobre h2 {
   display: inline;
 }
@@ -213,7 +218,6 @@ body {
   border-radius: 50px;
   transition: background-color 0.3s ease-in-out;
 }
-
 .navbar-alterada .navbar a {
   color: #83DA8A !important;
 }
