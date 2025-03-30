@@ -1,0 +1,165 @@
+/* Definição do Inicio */
+.sec-inicio {
+  display: block;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 10%;
+}
+.text-inicio {
+  font: 0.9rem sans-serif;
+  width: 100%; 
+  margin-bottom: 10px;
+  margin-top: 1%;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.first-name {
+  margin-right: 2%;
+}
+.letra-cor-fixa, .cor-verde {
+  color: #83DA8A;
+}
+
+/* inicio da animação de escrita */
+.escrevendo-cargo-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.escrevendo-cargo-div > span { /* Estiliza o span que contém o '>' */
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte do '>' */
+  margin-right: 10px; /* Adiciona um pouco de espaço entre '>' e o texto  */
+}
+.escrevendo-cargo {
+  font-size: 1.4rem;
+  color: #83DA8A;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid #83DA8A;
+  animation:
+    typing-loop 6s steps(16, end) infinite, /* Ajuste a duração total e adicione 'infinite' */
+    blink-cursor .75s step-end infinite;
+  width: 18ch; 
+  margin-bottom: 0; /* Remove a margem inferior do h3 para alinhar melhor */
+}
+@keyframes typing-loop {
+  0% { 
+    width: 0 
+  } 50% { 
+    width: 18ch /* Digita todo o texto */
+  } 90% { 
+    width: 18ch /* Mantém visível por um tempo */
+  } 100% { 
+    width: 0 /* Apaga */
+  }
+}
+/* fim da animação de escrita */
+.React-logo-div {
+  pointer-events: none;
+}
+.React-logo {
+  height: 300px;
+  width: 300px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .React-logo {
+    animation: React-logo-spin infinite 20s linear;
+  }
+}
+@keyframes React-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.rede-social {
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  background: #D9D9D9;
+  padding: 5px;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.07s ease-in-out; /* Duração da animação */
+  transition-delay: 0.07s;
+}
+.rede-social:hover {
+  background: #83DA8A;
+  transform: translateY(-5px);
+}
+/* Media query para telas maiores (tablets e desktops) */
+@media (min-width: 950px) {
+  .sec-inicio {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 10%;
+    text-align: left;
+  }
+
+  .text-inicio {
+    font-size: 1rem sans-serif;
+    width: 50%; /* Retorna a largura para desktop */
+    margin-bottom: 0;
+  }
+
+  .name {
+    flex-direction: row; /* Nome e sobrenome lado a lado em telas maiores */
+    align-items: center;
+    text-align: left;
+    font-size: 2rem; /* Fonte maior para o nome em desktop */
+  }
+
+  .first-name {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .escrevendo-cargo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 220px;
+  }
+
+  .escrevendo-cargo {
+    font-size: 1.6rem; /* Fonte maior para o cargo em desktop */
+    width: 16ch; /* Retorna a largura original */
+  }
+
+  .redes-sociais {
+    justify-content: flex-start; /* Alinha os ícones à esquerda em desktop */
+    margin-top: 10px;
+  }
+
+  .rede-social {
+    margin-right: 2%;
+    height: 25px;
+    width: 25px;
+  }
+
+  .React-logo {
+    width: 40%;
+    max-width: none;
+    margin-top: 0;
+  }
+}
+
+

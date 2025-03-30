@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex; /* Garante que a navbar seja flexível por padrão */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #83DA8A;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #83DA8A;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+/* Estilos para o menu sanduíche */
+.menu-icon {
+  display: none; /* Oculta por padrão em telas maiores */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #83DA8A;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para mostrar o menu em telas menores e ocultar a navbar normal */
+@media (max-width: 768px) { /* Ajuste o breakpoint conforme necessário */
+  .navbar {
+    display: none; /* Oculta a navbar normal em telas menores */
+    position: absolute;
+    top: 70px; /* Ajuste conforme a altura do seu header */
+    left: 0;
+    background-color: #4A4949; /* Cor de fundo do menu */
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    flex-direction: column; /* Garante que os itens fiquem em coluna */
+  }
+
+  .navbar.open {
+    display: flex; /* Mostra o menu quando a classe 'open' está presente */
+  }
+
+  .navbar.open ul {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .navbar.open li {
+    margin: 10px 0;
+  }
+
+  .navbar.open a {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: block; /* Garante que o link ocupe a largura total */
+  }
+
+  .menu-icon {
+    display: block; /* Mostra o ícone do menu sanduíche em telas menores */
+  }
+
+  .menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+}

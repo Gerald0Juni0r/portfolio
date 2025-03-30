@@ -1,0 +1,40 @@
+.sec-sobre {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .sec-sobre-setup {
+    pointer-events: none
+  }
+  
+  .sec-sobre h2 {
+    display: inline;
+  }
+  
+  .sec-sobre-h2 {
+    text-align: center;
+    margin-top: 50%;
+  }
+  
+  .sec-sobre-p {
+    margin-top: 20%;
+    width: 500px;
+  }
+  
+  .sec-sobre-text {
+    margin-left: 5%;
+  }
+  
+  .sec-sobre-formacao {
+    margin-top: 30px;
+  }
+  
+  .sec-sobre-formacao h3 {
+    margin-bottom: 10px;
+  }
+  
+  .sec-sobre-formacao p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
