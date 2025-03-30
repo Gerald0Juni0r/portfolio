@@ -4,7 +4,7 @@ import github from "/src/assets/img/redes-sociais/github.png";
 import linkedin from "/src/assets/img/redes-sociais/linkedin.png";
 import "./Home.css";
 
-function App() {
+function Home() {
     const [typedText, setTypedText] = useState("");
     const fullText = "Desenvolvedor WEB";
     const typingSpeed = 150; // Velocidade em milissegundos por caractere
@@ -72,11 +72,11 @@ function App() {
                 </a>
             </div>
         </div>
-        <div className="React-logo">
-            <img src={reactLogo} alt="react-logo" />
+        <div className="React-logo-div">
+            <img className="React-logo" src={reactLogo} alt="react-logo" />
         </div>
     </div>
   );
 }
 
-export default App;
+export default Home;

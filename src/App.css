@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 /* Organização inicial */
 * {
   margin: 0;
@@ -11,14 +13,16 @@ body {
   background-color: #252323;
   align-items: center;
   justify-content: center;
+  padding-top: 70px;
   user-select: none; /* Não conseguirá selecionar nada do site */
 }
 
 /* Navbar alterada ao entrar na seção "Sobre Mim" */
 .navbar-alterada {
-  background-color: #4A4949 !important;
-  margin-top: 20px;
-  border-radius: 50px;
+  /* background-color: #4A4949 !important; */
+  margin-top: 0;
+  border-radius: 0;
+  background: transparent;
   transition: background-color 0.3s ease-in-out;
 }
 

@@ -1,11 +1,11 @@
-import setup from "/src/assets/img/setup.png";
+// import setup from "/src/assets/img/setup.png";
 import "./About.css";
 
 function App() {
   return (    
     <div className="sec-sobre" id="sobre">
         <div>
-            <img className="sec-sobre-setup" src={setup} alt="setup" />
+            {/* <img className="sec-sobre-setup" src={setup} alt="setup" /> */}
         </div>
         <div className="sec-sobre-text">
             <div className="sec-sobre-h2">
