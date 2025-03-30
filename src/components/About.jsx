@@ -1,5 +1,5 @@
-import setup from "./assets/img/setup.png";
-import "./App.css";
+import setup from "/src/assets/img/setup.png";
+import "./About.css";
 
 function App() {
   return (    

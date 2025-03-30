@@ -3,213 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
   color: white;
   text-decoration: none;
 }
+
 body {
   background-color: #252323;
   align-items: center;
   justify-content: center;
   user-select: none; /* Não conseguirá selecionar nada do site */
 }
-
-/* Definições do App */
-/* .App {} */
-
-/* Definições do Header */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  display: flex;
-  background: transparent;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-/* Tamanho da logo */
-.React-logo {
-  pointer-events: none;
-}
-
-/* Animação da navbar */
-.navbar a {
-  position: relative;
-  font-size: 15px;
-  font-weight: 500;
-  margin-left: 20px;
-  color: #83DA8A;
-}
-.navbar a::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #83DA8A;
-  transition: .3s;
-}
-.navbar a:hover::before {
-  width: 100%;
-}
-
-/* Definição do Inicio */
-.sec-inicio {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh; /* Faz com que ocupe a tela toda */
-}
-.text-inicio {
-  display: block;
-  font: 0.8rem sans-serif;
-  width: 50%;
-}
-.mouse-event-none {
-  pointer-events: none
-}
-.name {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  letter-spacing: 2%;
-  text-align: left;
-  cursor:default;
-}
-.first-name {
-  margin-right: 20px;
-}
-.letra-cor:hover {
-  color: #83DA8A;
-}
-.letra-cor-fixa, .cor-verde {
-  color: #83DA8A;
-}
-
-/* inicio da animação de escrita */
-.escrevendo-cargo-div {
-  display: flex;
-  align-items: center; /* Centraliza verticalmente os itens dentro da div */
-}
-.escrevendo-cargo-div > span { /* Estiliza o span que contém o '>' */
-  font-size: 1.5rem; /* Aumenta o tamanho da fonte do '>' */
-  margin-right: 10px; /* Adiciona um pouco de espaço entre '>' e o texto */
-}
-.escrevendo-cargo {
-  font-size: 1.2rem;
-  color: #83DA8A;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: .15em solid #83DA8A;
-  animation:
-    typing-loop 6s steps(16, end) infinite, /* Ajuste a duração total e adicione 'infinite' */
-    blink-cursor .75s step-end infinite;
-  width: 16ch; /* Largura inicial aproximada do texto */
-  margin-bottom: 0; /* Remove a margem inferior do h3 para alinhar melhor */
-}
-@keyframes typing-loop {
-  0% { width: 0 } /* Começa invisível */
-  50% { width: 18.5ch } /* Digita todo o texto */
-  90% { width: 18.5ch } /* Mantém visível por um tempo */
-  100% { width: 0 } /* Apaga */
-}
-@keyframes blink-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: #83DA8A }
-}
-/* fim da animação de escrita */
-
-@media (prefers-reduced-motion: no-preference) {
-  .React-logo {
-    animation: React-logo-spin infinite 20s linear;
-  }
-}
-@keyframes React-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.redes-sociais {
-  display: flex;
-  margin-top: 10px;
-}
-.rede-social {
-  margin-right: 2%;
-  height: 25px;
-  width: 25px;
-  background: #D9D9D9;
-  padding: 3px;
-  border-radius: 10%;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.07s ease-in-out; /* Duração da animação */
-  transition-delay: 0.07s;
-}
-.rede-social:hover {
-  background: #83DA8A;
-  transform: translateY(-5px);
-}
-
-/* Definição do Sobre Mim */
-.sec-sobre {
-  display: flex;
-  height: 100vh;  
-}
-.sec-sobre-setup {
-  pointer-events: none
-}
-.sec-sobre h2 {
-  display: inline;
-}
-.sec-sobre-h2 {
-  text-align: center;
-  margin-top: 50%;
-}
-.sec-sobre-p {
-  margin-top: 20%;
-  width: 500px;
-}
-.sec-sobre-text {
-  margin-left: 5%;
-}
-
-.sec-sobre-formacao {
-  margin-top: 30px;
-}
-.sec-sobre-formacao h3 {
-  margin-bottom: 10px;
-}
-.sec-sobre-formacao p {
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-}
-
-
-/* Definição do Meus Projetos */
-.sec-projetos {
-  display: flex;
-  height: 100vh;  
-}
-
-
-/* Definição do Habilidades Técnicas */
-.sec-habilidades {
-  display: flex;
-  height: 100vh;  
-}
-
-
-
- 
 
 /* Navbar alterada ao entrar na seção "Sobre Mim" */
 .navbar-alterada {
@@ -218,6 +21,7 @@ body {
   border-radius: 50px;
   transition: background-color 0.3s ease-in-out;
 }
+
 .navbar-alterada .navbar a {
   color: #83DA8A !important;
 }

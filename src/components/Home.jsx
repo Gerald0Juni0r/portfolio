@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/img/react-logo.png";
-import github from "./assets/img/redes-sociais/github.png";
-import linkedin from "./assets/img/redes-sociais/linkedin.png";
-import "./App.css";
+import reactLogo from "/src/assets/img/react-logo.png";
+import github from "/src/assets/img/redes-sociais/github.png";
+import linkedin from "/src/assets/img/redes-sociais/linkedin.png";
+import "./Home.css";
 
 function App() {
     const [typedText, setTypedText] = useState("");

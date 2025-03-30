@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import logo from "./assets/img/logo.png";
-import "./App.css";
+import logo from "/src/assets/img/logo.png";
+import "./Header.css";
 
 function App() {
   const [isAboutVisible, setIsAboutVisible] = useState(false);
