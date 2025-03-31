@@ -1,7 +1,9 @@
 .sec-sobre {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
+    padding-top: 0;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
   }
   
   .sec-sobre-setup {
@@ -14,27 +16,35 @@
   
   .sec-sobre-h2 {
     text-align: center;
-    margin-top: 50%;
+    margin-top: 25%;
   }
   
   .sec-sobre-p {
-    margin-top: 20%;
-    width: 500px;
+    margin-top: 10%;
+    font-size: smaller;
+    width: 300px;
   }
   
   .sec-sobre-text {
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .sec-sobre-formacao {
-    margin-top: 30px;
+    margin-top: 10%;
   }
   
   .sec-sobre-formacao h3 {
-    margin-bottom: 10px;
+    margin-bottom: 2%;
   }
   
   .sec-sobre-formacao p {
     font-size: 0.9rem;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
+  }
+  .sec-sobre-minha-foto {
+    padding-top: 7%;
+    align-items: center;
   }

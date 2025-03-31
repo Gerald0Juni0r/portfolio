@@ -5,20 +5,19 @@
   text-align: center;
   box-sizing: border-box;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 50%;
 }
 .text-inicio {
   font: 0.9rem sans-serif;
   width: 100%; 
-  margin-bottom: 10px;
-  margin-top: 1%;
+  margin-bottom: 20%;
+  text-align: start;
+  justify-content: start;
 }
 .name {
   display: flex;
   flex-direction: row;
   font-size: 1rem;
-  text-align: center;
-  justify-content: center;
 }
 .first-name {
   margin-right: 2%;
@@ -30,12 +29,11 @@
 /* inicio da animação de escrita */
 .escrevendo-cargo-div {
   display: flex;
-  justify-content: center;
   margin-bottom: 20px;
 }
-.escrevendo-cargo-div > span { /* Estiliza o span que contém o '>' */
-  font-size: 1.5rem; /* Aumenta o tamanho da fonte do '>' */
-  margin-right: 10px; /* Adiciona um pouco de espaço entre '>' e o texto  */
+.escrevendo-cargo-div > span { /* Estiliza o '>' */
+  font-size: 1.5rem; /* Aumenta o tamanho */
+  margin-right: 10px; /* Adiciona espaço entre '>' e o texto  */
 }
 .escrevendo-cargo {
   font-size: 1.4rem;
@@ -66,8 +64,8 @@
   pointer-events: none;
 }
 .React-logo {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .React-logo {
@@ -84,7 +82,6 @@
 }
 .redes-sociais {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 .rede-social {
