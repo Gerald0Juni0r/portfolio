@@ -1,14 +1,14 @@
 .sec-sobre {
   padding-top: 0;
   display: flex;
-  min-height: 100vh;
+  min-height: 92vh;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.sec-sobre-setup {
-  pointer-events: none
+.esconder {
+  display: none;
 }
 
 .sec-sobre h2 {
@@ -17,13 +17,12 @@
 
 .sec-sobre-h2 {
   text-align: center;
-  margin-top: 25%;
 }
 
 .sec-sobre-p {
   text-align: justify;
   font-size: smaller;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 300px;
   margin-inline: auto;
 }
@@ -35,6 +34,7 @@
 .sec-sobre-text {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
 }
 
 .sec-sobre-formacao {
@@ -56,4 +56,48 @@
   border-radius: 50%;
   margin-inline: auto;
   pointer-events: none;
+}
+
+/* para pc */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .sec-sobre {
+    width: 100vh;
+  }
+  .sec-sobre-p {
+    width: 700px;
+  }
+  .sec-sobre-formacao {
+    justify-content: left;
+    text-align: start;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    justify-content: space-between;
+  }
+  .sec-sobre {
+    flex-direction: row;
+    width: 100vh;
+  }
+  .sec-sobre-setup {
+    pointer-events: none;
+    height: 100vh;
+    width: 50vh;
+    left: 0px;
+    /* margin-inline: 50vh; */
+  }
+  /* .sec-sobre-text {
+    margin-inline: 50vh;
+    width: 50vh;
+  } */
+  .sec-sobre-p {
+    width: 500px;
+  }
+  .sec-sobre-formacao {
+    justify-content: left;
+    text-align: start;
+  }
+  .esconder {
+    display: initial;
+  }
 }

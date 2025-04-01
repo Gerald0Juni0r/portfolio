@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   width: 90%; 
   max-width: 1200px; 
-  padding: 10px 10%;
+  padding: 5px 10%;
   display: flex;
   background: transparent;
   justify-content: space-between;
@@ -74,10 +74,10 @@
 
 /* Quando o usuário rolar a página */
 .header.scrolled {
-  background: #4A4949; /* Cor de fundo quando desce */
+  background: #4A4949;
   border-radius: 50px;
   top: 10px;
-  padding: 10px 10%;
+  padding: 5px 10%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -86,25 +86,25 @@
 }
 
 .header.scrolled .logo img {
-  height: 35px; /* Diminui o tamanho do logo */
+  height: 35px;
 }
 
-/* Estilos para mostrar o menu em telas menores e ocultar a navbar normal */
-@media (max-width: 768px) { /* Ajuste o breakpoint conforme necessário */
+/* menu em telas menores e ocultar a navbar normal */
+@media (max-width: 768px) {
   .navbar {
-    display: none; /* Oculta a navbar normal em telas menores */
+    display: none;
     position: absolute;
-    top: 70px; /* Ajuste conforme a altura do seu header */
+    top: 70px;
     left: 0;
-    background-color: #4A4949; /* Cor de fundo do menu */
+    background-color: #4A4949;
     width: 100%;
     text-align: center;
     z-index: 10;
-    flex-direction: column; /* Garante que os itens fiquem em coluna */
+    flex-direction: column;
   }
 
   .navbar.open {
-    display: flex; /* Mostra o menu quando a classe 'open' está presente */
+    display: flex;
   }
 
   .navbar.open ul {
@@ -119,11 +119,11 @@
   .navbar.open a {
     padding: 10px;
     font-size: 1.2rem;
-    display: block; /* Garante que o link ocupe a largura total */
+    display: block; 
   }
 
   .menu-icon {
-    display: block; /* Mostra o ícone do menu sanduíche em telas menores */
+    display: block;
   }
 
   .menu-icon.open .bar:nth-child(1) {

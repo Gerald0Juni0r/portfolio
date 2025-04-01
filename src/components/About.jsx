@@ -1,12 +1,12 @@
-// import setup from "/src/assets/img/setup.png";
+import setup from "/src/assets/img/setup.png";
 const minhaFoto = new URL("/src/assets/img/MinhaFoto.JPG", import.meta.url).href;
 import "./About.css";
 
 function App() {
     return (    
         <div className="sec-sobre" id="sobre">
-            <div>
-                {/* <img className="sec-sobre-setup" src={setup} alt="setup" /> */}
+            <div className="esconder">
+                <img className="sec-sobre-setup esconder" src={setup} alt="setup" />
             </div>
             <div className="sec-sobre-text">
                 <div className="sec-sobre-h2 ubuntu-bold">
@@ -26,7 +26,7 @@ function App() {
                 <div className="sec-sobre-formacao ubuntu-regular">
                     <h3>Formação</h3>
                     <p className="cor-verde">Ciência da Computação - <span>UNINASSAU</span></p>
-                    <p className="cor-verde">Programa Com.Dominio Digital 4.0 - <span>UCE</span></p>
+                    <p className="cor-verde">Programa Com.Dominio Digital 4.0 - <span>UECE</span></p>
                 </div>
                 <img className="sec-sobre-minha-foto" src={minhaFoto} alt="Foto de Geraldo" />
             </div>
