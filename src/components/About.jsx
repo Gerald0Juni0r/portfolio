@@ -14,11 +14,13 @@ function App() {
                 </div>
                 <div className="sec-sobre-p">
                     <p>
-                    Olá, eu sou Geraldo Júnior, desenvolvedor de software full-stack.
-                    
-                    Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá 
-                    
-                    Busco atuar na área de TI, contribuindo com minhas habilidades e competências na condição de colaborador efetivo ou temporário.
+                        Oi, eu sou o Geraldo Júnior, desenvolvedor full-stack apaixonado por tecnologia e programação. Gosto de transformar ideias em código e estou sempre aprendendo algo novo para melhorar minhas habilidades.
+                    </p>
+                    <p className="sec-sobre-p-meio">
+                        Já trabalhei em projetos que vão de sites simples a aplicações mais complexas, explorando diferentes tecnologias e buscando soluções eficientes. Minha motivação vem do desafio de criar algo útil e bem feito.
+                    </p>
+                    <p>
+                        Atualmente, estou em busca de oportunidades na área de TI, onde eu possa contribuir, aprender e crescer profissionalmente. Se quiser saber mais sobre meu trabalho, dá uma olhada nos meus projetos ou entre em contato!
                     </p>
                 </div>
                 <div className="sec-sobre-formacao">

@@ -18,9 +18,14 @@
   }
   
   .sec-sobre-p {
-    margin-top: 10%;
+    text-align: justify;
     font-size: smaller;
+    margin-top: 10%;
     width: 300px;
+  }
+
+  .sec-sobre-p-meio {
+    margin: 5% 0;
   }
   
   .sec-sobre-text {
