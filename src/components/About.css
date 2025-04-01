@@ -49,7 +49,7 @@
 }
 .sec-sobre-minha-foto {
   margin: 10% 0;
-  width: 20%;
+  width: 100px;
   border-radius: 50%;
   margin-inline: auto;
   pointer-events: none;
