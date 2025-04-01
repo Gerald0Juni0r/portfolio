@@ -89,17 +89,11 @@
   margin-right: 15px;
   height: 30px;
   width: 30px;
-  background: #D9D9D9;
-  padding: 5px;
   border-radius: 10%;
+  background: #D9D9D9;
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.07s ease-in-out; /* Duração da animação */
-  transition-delay: 0.07s;
-}
-.rede-social:hover {
-  background: #83DA8A;
-  transform: translateY(-5px);
 }
 /* Media query para telas maiores (tablets e desktops) */
 @media (min-width: 950px) {
@@ -151,6 +145,14 @@
     margin-right: 2%;
     height: 25px;
     width: 25px;
+    padding: 5%;
+    transition: transform 0.07s ease-in-out; /* Duração da animação */
+    transition-delay: 0.07s;
+  }
+  
+  .rede-social:hover {
+    background: #83DA8A;
+    transform: translateY(-5px);
   }
 
   .React-logo {
