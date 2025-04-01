@@ -46,16 +46,16 @@
   animation:
     typing-loop 6s steps(16, end) infinite, /* Ajuste a duração total e adicione 'infinite' */
     blink-cursor .75s step-end infinite;
-  width: 18ch; 
+  width: 17ch; 
   margin-bottom: 0;
 }
 @keyframes typing-loop {
   0% { 
     width: 0 
   } 50% { 
-    width: 18ch /* Digita todo o texto */
+    width: 17ch /* Digita todo o texto */
   } 90% { 
-    width: 18ch /* Mantém visível por um tempo */
+    width: 17ch /* Mantém visível por um tempo */
   } 100% { 
     width: 0 /* Apaga */
   }
@@ -112,15 +112,15 @@
 
   .text-inicio {
     font-size: 1rem sans-serif;
-    width: 50%; /* Retorna a largura para desktop */
+    width: 50%;
     margin-bottom: 0;
   }
 
   .name {
-    flex-direction: row; /* Nome e sobrenome lado a lado em telas maiores */
+    flex-direction: row; 
     align-items: center;
     text-align: left;
-    font-size: 2rem; /* Fonte maior para o nome em desktop */
+    font-size: 2rem;
   }
 
   .first-name {
@@ -138,12 +138,12 @@
   }
 
   .escrevendo-cargo {
-    font-size: 1.6rem; /* Fonte maior para o cargo em desktop */
-    width: 16ch; /* Retorna a largura original */
+    font-size: 1.6rem; 
+    width: 16ch; 
   }
 
   .redes-sociais {
-    justify-content: flex-start; /* Alinha os ícones à esquerda em desktop */
+    justify-content: flex-start; 
     margin-top: 10px;
   }
 

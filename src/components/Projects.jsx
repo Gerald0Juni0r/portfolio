@@ -15,13 +15,13 @@ const projects = [
 function Projects() {
     return (
         <section className="sec-projetos" id="projetos">
-            <h2>MEUS <span className="cor-verde">PROJETOS</span></h2>
+            <h2 className="ubuntu-bold">MEUS <span className="cor-verde">PROJETOS</span></h2>
 
             <div className="projects-grid">
                 {projects.map((project) => (
                     <div className="project-item" key={project.id}>
                         <img src={project.img} alt={`Projeto ${project.id}`} />
-                        <a href={project.link} className="ver-mais">Ver mais</a>
+                        <a href={project.link} className="ver-mais ubuntu-regular">Ver mais</a>
                     </div>
                 ))}
             </div>

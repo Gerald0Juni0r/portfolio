@@ -7,7 +7,7 @@ import "./Home.css";
 function Home() {
     const [typedText, setTypedText] = useState("");
     const fullText = "Desenvolvedor WEB";
-    const typingSpeed = 150; // Velocidade em milissegundos por caractere
+    const typingSpeed = 150; // Velocidade em milissegundos
 
     // Parte lógica da animação de escrita
     useEffect(() => {
@@ -17,17 +17,16 @@ function Home() {
         setTypedText(fullText.substring(0, typedText.length + 1));
         }, typingSpeed);
     } else {
-        // Opcional: Adicionar um delay antes de "apagar"
         setTimeout(() => {
-        setTypedText(""); // Reinicia o texto para o loop
-        }, 1500); // Espera 1.5 segundos antes de apagar
+        setTypedText(""); 
+        }, 1500); // Espera 1.5s pra apagar
     }
-    return () => clearTimeout(timer); // Limpa o timer se o componente for desmontado
+    return () => clearTimeout(timer); // Limpa o timer
     }, [typedText]);
   return (
     <div className="sec-inicio" id="inicio">
         <div className="text-inicio">
-            <h2 className="cor-verde mouse-event-none">Olá 👋, meu nome é</h2>
+            <h2 className="cor-verde mouse-event-none ubuntu-regular">Olá 👋, meu nome é</h2>
             <div className="name">
                 <h1 className="first-name">
                     <span className="letra-cor">G</span>
@@ -49,7 +48,7 @@ function Home() {
             </div>
             <div className="escrevendo-cargo-div mouse-event-none">
                 <span className="cor-verde">&gt;</span>
-                <h3 className="escrevendo-cargo cor-verde">
+                <h3 className="escrevendo-cargo cor-verde ubuntu-regular">
                     <span className="texto-animado cor-verde">Desenvolvedor WEB{"  "}</span>
                 </h3>
             </div>

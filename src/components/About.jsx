@@ -9,10 +9,10 @@ function App() {
                 {/* <img className="sec-sobre-setup" src={setup} alt="setup" /> */}
             </div>
             <div className="sec-sobre-text">
-                <div className="sec-sobre-h2">
+                <div className="sec-sobre-h2 ubuntu-bold">
                     <h2 className="cor-verde">SOBRE <span>MIM</span></h2>
                 </div>
-                <div className="sec-sobre-p">
+                <div className="sec-sobre-p rosarivo-regular-italic">
                     <p>
                         Oi, eu sou o Geraldo Júnior, desenvolvedor full-stack apaixonado por tecnologia e programação. Gosto de transformar ideias em código e estou sempre aprendendo algo novo para melhorar minhas habilidades.
                     </p>
@@ -23,7 +23,7 @@ function App() {
                         Atualmente, estou em busca de oportunidades na área de TI, onde eu possa contribuir, aprender e crescer profissionalmente. Se quiser saber mais sobre meu trabalho, dá uma olhada nos meus projetos ou entre em contato!
                     </p>
                 </div>
-                <div className="sec-sobre-formacao">
+                <div className="sec-sobre-formacao ubuntu-regular">
                     <h3>Formação</h3>
                     <p className="cor-verde">Ciência da Computação - <span>UNINASSAU</span></p>
                     <p className="cor-verde">Programa Com.Dominio Digital 4.0 - <span>UCE</span></p>

@@ -3,9 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  background-color: #252323;
-  color: white;
-  text-align: center;
+  pointer-events: none;
 }
 
 .titulo {

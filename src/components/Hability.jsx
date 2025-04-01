@@ -31,7 +31,7 @@ function Habilidades() {
 
     return (
         <section className="sec-habilidades" id="habilidades">
-            <h2 className="cor-verde">HABILIDADES <span>TÉCNICAS</span></h2>
+            <h2 className="cor-verde ubuntu-bold">HABILIDADES <span>TÉCNICAS</span></h2>
 
             <div className="habilidades-grid">
                 {skills.map((skill, index) => (
