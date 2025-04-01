@@ -1,14 +1,18 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; 
+  max-width: 1200px; 
+  padding: 10px 10%;
   display: flex;
   background: transparent;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-radius: 50px;
+  transition: transparent 0.3s, padding 0.3s;
 }
 
 .header .logo {
@@ -17,7 +21,7 @@
 }
 
 .navbar {
-  display: flex; /* Garante que a navbar seja flexível por padrão */
+  display: flex; 
 }
 
 .navbar ul {
@@ -66,6 +70,23 @@
   background-color: #83DA8A;
   margin: 5px 0;
   transition: 0.4s;
+}
+
+/* Quando o usuário rolar a página */
+.header.scrolled {
+  background: #4A4949; /* Cor de fundo quando desce */
+  border-radius: 50px;
+  top: 10px;
+  padding: 10px 10%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo img {
+  transition: height 0.3s;
+}
+
+.header.scrolled .logo img {
+  height: 35px; /* Diminui o tamanho do logo */
 }
 
 /* Estilos para mostrar o menu em telas menores e ocultar a navbar normal */

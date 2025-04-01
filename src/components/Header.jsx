@@ -3,47 +3,45 @@ import logogd from "/src/assets/img/logo.png";
 import "./Header.css";
 
 function Header() {
-  const [isAboutVisible, setIsAboutVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const aboutSection = document.getElementById("sobre");
-    if (!aboutSection) return;
+  const handleInicioClick = (e) => {
+    e.preventDefault(); 
+    setIsMenuOpen(false);
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsAboutVisible(entry.isIntersecting);
-      },
-      { threshold: 0.05 }
-    );
+    // Rola suavemente pra o topo
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
-    observer.observe(aboutSection);
-    return () => observer.disconnect();
-  }, []);
+    setTimeout(() => {
+      setIsScrolled(false);
+    }, 500); 
+  };
 
   return (
-    <header className={`header ${isAboutVisible ? "navbar-alterada" : ""}`}>
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <a href="#inicio" className="logo">
         <img src={logogd} alt="logo" style={{ height: '40px' }} />
       </a>
       <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li>
-            <a href="#inicio" onClick={() => setIsMenuOpen(false)}>INÍCIO</a>
-          </li>
-          <li>
-            <a href="#sobre" onClick={() => setIsMenuOpen(false)}>SOBRE</a>
-          </li>
-          <li>
-            <a href="#projetos" onClick={() => setIsMenuOpen(false)}>PROJETOS</a>
-          </li>
-          <li>
-            <a href="#habilidades" onClick={() => setIsMenuOpen(false)}>HABILIDADES</a>
-          </li>
+          <li><a href="#inicio" onClick={handleInicioClick}>INÍCIO</a></li>
+          <li><a href="#sobre" onClick={() => setIsMenuOpen(false)}>SOBRE</a></li>
+          <li><a href="#projetos" onClick={() => setIsMenuOpen(false)}>PROJETOS</a></li>
+          <li><a href="#habilidades" onClick={() => setIsMenuOpen(false)}>HABILIDADES</a></li>
         </ul>
       </nav>
 
