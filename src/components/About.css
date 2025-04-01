@@ -2,7 +2,6 @@
   padding-top: 0;
   display: flex;
   justify-content: center;
-  pointer-events: none;
 }
 
 .sec-sobre-setup {
@@ -51,4 +50,5 @@
   padding-top: 7%;
   width: 25%;
   margin-inline: auto;
+  pointer-events: none;
 }

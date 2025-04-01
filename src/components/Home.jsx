@@ -59,7 +59,7 @@ function Home() {
                     rel="noreferrer"
                     className="rede-social"
                 >
-                    <img src={linkedin} alt="linkedin" />
+                    <img className="rede-social-logo" src={linkedin} alt="linkedin" />
                 </a>
                 <a
                     href="https://github.com/Gerald0Juni0r"
@@ -67,7 +67,7 @@ function Home() {
                     rel="noreferrer"
                     className="rede-social"
                 >
-                    <img src={github} alt="github" />
+                    <img className="rede-social-logo" src={github} alt="github" />
                 </a>
             </div>
         </div>

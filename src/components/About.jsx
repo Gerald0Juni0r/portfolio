@@ -1,5 +1,5 @@
 // import setup from "/src/assets/img/setup.png";
-import minhaFoto from "/src/assets/img/minhaFoto.png";
+import minhaFoto from "/src/assets/img/MinhaFoto.JPG";
 import "./About.css";
 
 function App() {

@@ -149,6 +149,10 @@
     transition: transform 0.07s ease-in-out; /* Duração da animação */
     transition-delay: 0.07s;
   }
+
+  .rede-social-logo {
+    pointer-events: none;
+  }
   
   .rede-social:hover {
     background: #83DA8A;
