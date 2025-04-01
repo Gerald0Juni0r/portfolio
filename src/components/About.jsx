@@ -14,7 +14,7 @@ function App() {
                 </div>
                 <div className="sec-sobre-p rosarivo-regular-italic">
                     <p>
-                        Oi, eu sou o Geraldo Júnior, desenvolvedor full-stack apaixonado por tecnologia e programação. Gosto de transformar ideias em código e estou sempre aprendendo algo novo para melhorar minhas habilidades.
+                        Oi, eu sou Geraldo Júnior, desenvolvedor full-stack apaixonado por tecnologia e programação. Gosto de transformar ideias em código e estou sempre aprendendo algo novo para melhorar minhas habilidades.
                     </p>
                     <p className="sec-sobre-p-meio">
                         Já trabalhei em projetos que vão de sites simples a aplicações mais complexas, explorando diferentes tecnologias e buscando soluções eficientes. Minha motivação vem do desafio de criar algo útil e bem feito.
