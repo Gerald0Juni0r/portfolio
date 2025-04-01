@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
-  background-color: #252323; /* Cor de fundo da seção */
+  padding: 100px 0;
+  background-color: #252323;
   color: white;
   text-align: center;
 }
@@ -15,7 +15,7 @@
 }
 
 .titulo span {
-  color: #83DA8A; /* Sua cor de destaque */
+  color: #83DA8A;
 }
 
 .habilidades-grid {
@@ -29,9 +29,7 @@
 }
 
 .habilidade-container {
-  position: relative; /* Para posicionar os cards sobrepostos */
-
-  /* Defina a largura e a altura para o quadrado */
+  position: relative;
   width: 100px;
   height: 100px;
 }
@@ -40,8 +38,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza o card */
-  border-radius: 8px; /* Ajuste a borda */
+  transform: translate(-50%, -50%); /* Centralizar o card */
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
