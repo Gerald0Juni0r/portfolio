@@ -1,4 +1,79 @@
 .sec-projetos {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: #252323;
+  padding-top: 100px;
+}
+
+.titulo {
+  margin: 10% 0;
+}
+
+.titulo span {
+  color: #83DA8A;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.project-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative; 
+}
+
+@media (max-width: 900px) {
+  .project-item {
+      width: calc(50% - 20px);
   }
+}
+
+@media (max-width: 600px) {
+  .project-item {
+      width: calc(100% - 20px);
+  }
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  display: block; 
+  filter: brightness(70%); /* Escurecer a imagem permanentemente */
+}
+
+.project-item .ver-mais {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #83DA8A; /* Verde com transparência */
+  color: #252323;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 2; /* Garantir que o botão fique acima do overlay */
+}
+
+.project-item::before {
+  content: "";
+  position: absolute;
+  top: 0; /* Iniciar a 10px do topo */
+  left: 0; /* Iniciar a 10px da esquerda */
+  right: 0; /* Terminar a 10px da direita */
+  bottom: 0; /* Terminar a 10px da parte inferior */
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay preto semi-transparente */
+  border-radius: 15px; /* Manter o border-radius do item */
+  z-index: 1; /* Garantir que o overlay fique abaixo do botão */
+}

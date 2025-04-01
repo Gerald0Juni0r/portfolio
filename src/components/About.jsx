@@ -10,7 +10,7 @@ function App() {
             </div>
             <div className="sec-sobre-text">
                 <div className="sec-sobre-h2">
-                    <h2  className="cor-verde">SOBRE</h2><h2>MIM</h2>
+                    <h2 className="cor-verde">SOBRE <span>MIM</span></h2>
                 </div>
                 <div className="sec-sobre-p">
                     <p>

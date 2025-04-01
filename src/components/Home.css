@@ -1,23 +1,24 @@
 /* Definição do Inicio */
 .sec-inicio {
-  display: block;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   text-align: center;
   box-sizing: border-box;
   justify-content: center;
-  padding-top: 50%;
 }
 .text-inicio {
-  font: 0.9rem sans-serif;
+  font: 0.7rem sans-serif;
   width: 100%; 
   margin-bottom: 20%;
+  padding-left: 5%;
   text-align: start;
   justify-content: start;
 }
 .name {
   display: flex;
   flex-direction: row;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .first-name {
   margin-right: 2%;
@@ -32,11 +33,11 @@
   margin-bottom: 20px;
 }
 .escrevendo-cargo-div > span { /* Estiliza o '>' */
-  font-size: 1.5rem; /* Aumenta o tamanho */
-  margin-right: 10px; /* Adiciona espaço entre '>' e o texto  */
+  font-size: 0.9rem;
+  margin-right: 10px;
 }
 .escrevendo-cargo {
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: #83DA8A;
   margin-bottom: 0;
   white-space: nowrap;
@@ -46,7 +47,7 @@
     typing-loop 6s steps(16, end) infinite, /* Ajuste a duração total e adicione 'infinite' */
     blink-cursor .75s step-end infinite;
   width: 18ch; 
-  margin-bottom: 0; /* Remove a margem inferior do h3 para alinhar melhor */
+  margin-bottom: 0;
 }
 @keyframes typing-loop {
   0% { 

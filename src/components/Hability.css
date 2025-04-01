@@ -1,4 +1,85 @@
 .sec-habilidades {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #252323; /* Cor de fundo da seção */
+  color: white;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.titulo span {
+  color: #83DA8A; /* Sua cor de destaque */
+}
+
+.habilidades-grid {
+  padding-top: 10%;
+  width: 90%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
+  gap: 20px; 
+  justify-items: center; 
+}
+
+.habilidade-container {
+  position: relative; /* Para posicionar os cards sobrepostos */
+
+  /* Defina a largura e a altura para o quadrado */
+  width: 100px;
+  height: 100px;
+}
+
+.habilidade-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o card */
+  border-radius: 8px; /* Ajuste a borda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-dark {
+  background-color: #383838;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Abaixo */
+}
+
+.card-light {
+  background-color: #4A4949;
+  /* Calcula a largura e altura com 10% de margem em cada lado */
+  width: calc(100% - (2 * 10%));
+  height: calc(100% - (2 * 10%));
+  z-index: 2; /* Acima */
+}
+
+.habilidade-icon {
+  width: auto;
+  height: auto;
+  z-index: 3; /* Acima dos cards */
+}
+
+/* Estilos responsivos (opcional) */
+@media (max-width: 600px) {
+  .habilidade-container {
+    width: 150px;
+    height: 100px;
   }
+  .card-light {
+    width: calc(100% - (2 * 8%));
+    height: calc(100% - (2 * 8%));
+  }
+  .habilidade-icon {
+      max-width: 60%;
+      max-height: 60%;
+  }
+}
