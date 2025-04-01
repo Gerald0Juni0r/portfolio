@@ -1,5 +1,5 @@
 // import setup from "/src/assets/img/setup.png";
-import minhaFoto from "/src/assets/img/MinhaFoto.JPG";
+const minhaFoto = new URL("/src/assets/img/MinhaFoto.JPG", import.meta.url).href;
 import "./About.css";
 
 function App() {
