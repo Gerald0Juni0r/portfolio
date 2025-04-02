@@ -65,7 +65,7 @@
 }
 
 /* Estilos responsivos (opcional) */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .habilidade-container {
     width: 150px;
     height: 100px;
@@ -77,5 +77,33 @@
   .habilidade-icon {
       max-width: 60%;
       max-height: 60%;
+  }
+} */
+
+
+/* para pc */
+@media (min-width: 769px) and (max-width: 1000px) {
+  .sec-habilidades {
+    height: 100vh;
+    justify-content: center;
+  }
+  .habilidades-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    padding-top: 5%;
+  }
+}
+@media (min-width: 1001px) {
+  body {
+    justify-content: space-between;
+  }
+  .sec-habilidades {
+    height: 100vh;
+    justify-content: center;
+  }
+  .habilidades-grid {
+    grid-template-columns: repeat(6, 1fr);
+    width: auto;
+    padding-top: 5%;
   }
 }
