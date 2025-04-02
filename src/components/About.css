@@ -3,8 +3,12 @@
   display: flex;
   min-height: 92vh;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.sec-sobre-img {
+  width: 50%;
 }
 
 .esconder {
@@ -34,7 +38,8 @@
 .sec-sobre-text {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  margin-inline: auto;
+  justify-content: center;
 }
 
 .sec-sobre-formacao {
@@ -59,9 +64,11 @@
 }
 
 /* para pc */
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .sec-sobre {
-    width: 100vh;
+    width: 100%;
+    justify-content: center;
+    /* margin-inline: auto; */
   }
   .sec-sobre-p {
     width: 700px;
@@ -71,27 +78,21 @@
     text-align: start;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1001px) {
   body {
     justify-content: space-between;
   }
   .sec-sobre {
     flex-direction: row;
-    width: 100vh;
   }
   .sec-sobre-setup {
     pointer-events: none;
     height: 100vh;
-    width: 50vh;
+    width: 100%;
     left: 0px;
-    /* margin-inline: 50vh; */
   }
-  /* .sec-sobre-text {
-    margin-inline: 50vh;
-    width: 50vh;
-  } */
   .sec-sobre-p {
-    width: 500px;
+    width: 450px;
   }
   .sec-sobre-formacao {
     justify-content: left;
