@@ -1,5 +1,8 @@
 import "./Projects.css";
 
+
+import setup from "/src/assets/img/setup.png";
+
 import project01 from "/src/assets/img/Projects/projeto1.png";
 import project02 from "/src/assets/img/Projects/projeto2.png";
 import project03 from "/src/assets/img/Projects/projeto3.png";
@@ -14,16 +17,20 @@ const projects = [
 
 function Projects() {
     return (
-        <section className="sec-projetos" id="projetos">
-            <h2 className="ubuntu-bold">MEUS <span className="cor-verde">PROJETOS</span></h2>
-
-            <div className="projects-grid">
-                {projects.map((project) => (
-                    <div className="project-item" key={project.id}>
-                        <img src={project.img} alt={`Projeto ${project.id}`} />
-                        <a href={project.link} className="ver-mais ubuntu-regular">Ver mais</a>
-                    </div>
-                ))}
+        <section className="sec-projects" id="projetos">
+            <div className="sec-projects-img esconder">
+                <img className="sec-projects-setup esconder" src={setup} alt="setup" />
+            </div>
+            <div className="sec-projects-cont">
+                <h2 className="sec-projects-h2 ubuntu-bold">MEUS <span className="cor-verde">PROJETOS</span></h2>
+                <div className="projects-grid">
+                    {projects.map((project) => (
+                        <div className="project-item" key={project.id}>
+                            <img src={project.img} alt={`Projeto ${project.id}`} />
+                            <a href={project.link} className="ver-mais ubuntu-regular">Ver mais</a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
