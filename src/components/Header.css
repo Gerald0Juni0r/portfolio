@@ -138,3 +138,15 @@
     transform: rotate(45deg) translate(-6px, -6px);
   }
 }
+
+@media (min-width: 769px) {
+  .header {
+    padding: 5px 5%;
+  }
+  .header.scrolled {
+    padding: 5px 5%;
+  }
+  .navbar a {
+    font-size: 1rem;
+  }
+}
