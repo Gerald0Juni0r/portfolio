@@ -4,6 +4,7 @@
   align-items: center;
   padding: 100px 0;
   pointer-events: none;
+  height: 100vh;
 }
 
 .titulo {
@@ -63,23 +64,6 @@
   height: 48px;
   z-index: 3; /* Acima dos cards */
 }
-
-/* Estilos responsivos (opcional) */
-/* @media (max-width: 600px) {
-  .habilidade-container {
-    width: 150px;
-    height: 100px;
-  }
-  .card-light {
-    width: calc(100% - (2 * 8%));
-    height: calc(100% - (2 * 8%));
-  }
-  .habilidade-icon {
-      max-width: 60%;
-      max-height: 60%;
-  }
-} */
-
 
 /* para pc */
 @media (min-width: 769px) and (max-width: 1000px) {
