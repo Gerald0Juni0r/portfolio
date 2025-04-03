@@ -1,7 +1,7 @@
 import "./Projects.css";
 
 
-import setup from "/src/assets/img/setup.png";
+import setupProjects from "/src/assets/img/setup-projects.png";
 
 import project01 from "/src/assets/img/Projects/projeto1.png";
 import project02 from "/src/assets/img/Projects/projeto2.png";
@@ -19,7 +19,7 @@ function Projects() {
     return (
         <section className="sec-projects" id="projetos">
             <div className="sec-projects-img esconder">
-                <img className="sec-projects-setup esconder" src={setup} alt="setup" />
+                <img className="sec-projects-setup esconder" src={setupProjects} alt="setup" />
             </div>
             <div className="sec-projects-cont">
                 <h2 className="sec-projects-h2 ubuntu-bold">MEUS <span className="cor-verde">PROJETOS</span></h2>
