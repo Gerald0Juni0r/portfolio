@@ -1,12 +1,13 @@
-import setup from "/src/assets/img/setup.png";
+import setupAbout from "/src/assets/img/setup-about.png";
 const minhaFoto = new URL("/src/assets/img/MinhaFoto.JPG", import.meta.url).href;
+// const setupAbout = new URL("/src/assets/img/setupAbout.png", import.meta.url).href;
 import "./About.css";
 
 function App() {
     return (    
         <div className="sec-sobre" id="sobre">
             <div className="sec-sobre-img esconder">
-                <img className="sec-sobre-setup esconder" src={setup} alt="setup" />
+                <img className="sec-sobre-setup esconder" src={setupAbout} alt="setup" />
             </div>
             <div className="sec-sobre-text">
                 <div className="sec-sobre-h2 ubuntu-bold">

@@ -1,9 +1,9 @@
 .sec-sobre {
   padding-top: 0;
   display: flex;
-  min-height: 92vh;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -26,7 +26,7 @@
 .sec-sobre-p {
   text-align: justify;
   font-size: smaller;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 300px;
   margin-inline: auto;
 }
@@ -40,10 +40,11 @@
   flex-direction: column;
   margin-inline: auto;
   justify-content: center;
+  margin-top: 20%;
 }
 
 .sec-sobre-formacao {
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -65,10 +66,15 @@
 
 /* para pc */
 @media (min-width: 769px) and (max-width: 1000px) {
+  body {
+    font-size: x-large;
+  }
   .sec-sobre {
     width: 100%;
     justify-content: center;
-    /* margin-inline: auto; */
+  }
+  .sec-sobre-text {
+    margin-top: 0;
   }
   .sec-sobre-p {
     width: 700px;
@@ -90,6 +96,9 @@
     height: 100vh;
     width: 100%;
     left: 0px;
+  }
+  .sec-sobre-text {
+    margin-top: 0;
   }
   .sec-sobre-p {
     width: 450px;
