@@ -46,8 +46,23 @@ body {
   color: #83DA8A !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   body {
+    font-size: x-large;
+  }
+  .header a {
     font-size: large;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: x-large;
+  }
+  .header li {
+    font-size: large;
+  }
+  .project-item .ver-mais {
+    font-size: medium;
   }
 }
