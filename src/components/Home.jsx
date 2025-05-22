@@ -49,7 +49,7 @@ function Home() {
             <div className="escrevendo-cargo-div mouse-event-none">
                 <span className="cor-verde">&gt;</span>
                 <h3 className="escrevendo-cargo cor-verde ubuntu-regular">
-                    <span className="texto-animado cor-verde">Desenvolvedor WEB{"  "}</span>
+                    <span className="texto-animado cor-verde">Desenvolvedor Full Stack{"  "}</span>
                 </h3>
             </div>
             <div className="redes-sociais">
