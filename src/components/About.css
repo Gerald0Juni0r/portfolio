@@ -1,5 +1,6 @@
 .sec-sobre {
-  padding-top: 0;
+  padding-top: 70px;
+  box-sizing: border-box;
   display: flex;
   /* min-height: 100vh; */
   flex-direction: column;

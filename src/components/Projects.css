@@ -1,4 +1,6 @@
 .sec-projects {
+  padding-top: 70px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;

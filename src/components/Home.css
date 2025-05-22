@@ -2,7 +2,7 @@
 .sec-inicio {
   display: flex;
   flex-direction: column;
-  min-height: 92vh;
+  height: 100vh;
   text-align: center;
   box-sizing: border-box;
   justify-content: center;
@@ -104,7 +104,7 @@
     justify-content: space-between;
     padding: 50px 5%;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   .text-inicio {
     width: 50%;
@@ -135,12 +135,12 @@
 @media (min-width: 1101px) {
   .sec-inicio {
     flex-direction: row;
-    padding-top: 0;
+    /* padding-top: 0; */
     padding: 50px 10%;
     align-items: center;
     margin-inline: auto;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   .text-inicio h2 {
     font-size: 1.5rem;
