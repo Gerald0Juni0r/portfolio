@@ -6,7 +6,7 @@ import "./Home.css";
 
 function Home() {
     const [typedText, setTypedText] = useState("");
-    const fullText = "Desenvolvedor WEB";
+    const fullText = "Desenvolvedor Full Stack"; 
     const typingSpeed = 150; // Velocidade em milissegundos
 
     // Parte lógica da animação de escrita
