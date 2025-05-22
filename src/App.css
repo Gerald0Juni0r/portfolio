@@ -29,7 +29,7 @@
 body {
   align-items: center;
   justify-content: center;
-  /* padding-top: 70px; */
+  padding-top: 70px;
   background-color: #252323;
   user-select: none; /* Não conseguirá selecionar nada do site */
 }
