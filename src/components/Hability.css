@@ -4,7 +4,7 @@
   align-items: center;
   padding: 100px 0;
   pointer-events: none;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .titulo {
@@ -68,7 +68,7 @@
 /* para pc */
 @media (min-width: 769px) and (max-width: 1000px) {
   .sec-habilidades {
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
   }
   .habilidades-grid {
@@ -82,7 +82,7 @@
     justify-content: space-between;
   }
   .sec-habilidades {
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
   }
   .habilidades-grid {
