@@ -8,7 +8,7 @@
 }
 
 .sec-projects-h2 {
-  margin-top: 100px;
+  margin-top: 10%;
   flex-direction: row;
 }
 
@@ -106,12 +106,12 @@
   .project-item {
     width: calc(33.33% - 20px);
   }
-  .sec-projects {
-    /* min-height: 100vh; */
-  }
+  /* .sec-projects {
+    min-height: 100vh;
+  } */
   .sec-projects-setup {
     position: absolute;
-    /* height: 100vh; */
+    height: 90%;
     width: 50%;
     right: 0px;
   }
