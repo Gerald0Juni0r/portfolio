@@ -46,16 +46,16 @@
   animation:
     typing-loop 6s steps(16, end) infinite, /* Ajuste a duração total e adicione 'infinite' */
     blink-cursor .75s step-end infinite;
-  width: 20ch; 
+  width: 21ch; 
   margin-bottom: 0;
 }
 @keyframes typing-loop {
   0% { 
     width: 0 
   } 50% { 
-    width: 20ch /* Digita todo o texto */
+    width: 21ch /* Digita todo o texto */
   } 90% { 
-    width: 20ch /* Mantém visível por um tempo */
+    width: 21ch /* Mantém visível por um tempo */
   } 100% { 
     width: 0 /* Apaga */
   }
